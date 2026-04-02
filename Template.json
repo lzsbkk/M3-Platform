@@ -1,0 +1,2185 @@
+{
+  "questionnaires": [
+    {
+      "id": "卡罗林斯卡嗜睡量表(KSS)",
+      "title": "卡罗林斯卡嗜睡量表(KSS)",
+      "components": [
+        {
+          "type": "instruction",
+          "content": "请选择能描述你现在疲劳程度的选项"
+        },
+        {
+          "type": "single_choice",
+          "content": "请选择能描述你现在疲劳程度的选项",
+          "label": "PL",
+          "options": [
+            {
+              "text": "极度警醒",
+              "value": 1
+            },
+            {
+              "text": "非常警醒",
+              "value": 2
+            },
+            {
+              "text": "警醒",
+              "value": 3
+            },
+            {
+              "text": "相当警醒",
+              "value": 4
+            },
+            {
+              "text": "既不警醒也不困倦",
+              "value": 5
+            },
+            {
+              "text": "有点困倦",
+              "value": 6
+            },
+            {
+              "text": "困倦，保持警醒不费力",
+              "value": 7
+            },
+            {
+              "text": "困倦，保持警醒有点费力",
+              "value": 8
+            },
+            {
+              "text": "非常困倦",
+              "value": 9
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "KSS",
+          "calculation": "sum[PL]"
+        }
+      ]
+    },
+    {
+      "id": "疲劳自评量表-14",
+      "title": "疲劳自评量表-14（Fatigue Scale-14，FS-14）",
+      "components": [
+        {
+          "type": "instruction",
+          "content": "请被试根据问题内容与实际情况的符合与否，选择‘是’或‘否’，请逐条回答问题。"
+        },
+        {
+          "type": "single_choice",
+          "content": "1 你有过被疲劳困扰的经历吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "2 你是否需要更多的休息?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "3 你感觉到犯困或昏昏欲睡吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "4 你在着手做事情时是否感到费力?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "5 你在着手做事情时并不感到费力，但当你继续进行时是否感到力不从心?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "6 你感觉到体力不够吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "7 你感觉到你的肌肉力量比以前减小了吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "8 你感觉到虚弱吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "9 你集中注意力有困难吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "10 你在思考问题时头脑象往常一样清晰、 敏捷吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 0
+            },
+            {
+              "text": "否",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "11 你在讲话时出现口头不利落吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "12 讲话时，你发现找到一个合适的字眼很困难吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 1
+            },
+            {
+              "text": "否",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "13 你现在的记忆力象往常一样吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 0
+            },
+            {
+              "text": "否",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "14 你还喜欢做过去习惯做的事情吗?",
+          "label": "疲劳",
+          "options": [
+            {
+              "text": "是",
+              "value": 0
+            },
+            {
+              "text": "否",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "FS-14",
+          "calculation": "sum[疲劳]"
+        }
+      ]
+    },
+    {
+      "id": "成人注意力缺陷量表(ASRS)",
+      "title": "成人注意力缺陷量表(ASRS)",
+      "components": [
+        {
+          "type": "instruction",
+          "content": "请回答以下的问题，选择最能描述你过去六个月中的感受与行为的选项："
+        },
+        {
+          "type": "instruction",
+          "content": "Part A"
+        },
+        {
+          "type": "single_choice",
+          "content": "1 在完成了某件事具有挑战性的部分之后，你是否经常会在最后的细节上遇到困难?",
+          "label": "1",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "2 在进行一件要求有序组织的任务时，你常常会难以将事情打理得井井有条吗?",
+          "label": "2",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "3 你常常会忘记约定或者一些必须要完成的事情吗?",
+          "label": "3",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "4 当你需要完成一项花费脑力的任务时，你会常常逃避或者推迟吗?",
+          "label": "4",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "5 当你必须长时间坐着时，你会常常感到手脚不安吗?",
+          "label": "5",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "6 你常常会觉得极度活跃，非完成某些事情不可，就像是被马达驱动着一样吗?",
+          "label": "6",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "instruction",
+          "content": "Part B"
+        },
+        {
+          "type": "single_choice",
+          "content": "7 当从事无聊或困难的工作时，你常常犯粗心大意的错误吗？",
+          "label": "7",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "8 当从事无聊或重复性工作时，你常常难以保持专注吗？",
+          "label": "8",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "9 即使在他人面对面和你说话的情况下你也会常常难以专注于他人的讲话内容吗？",
+          "label": "9",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "10 你常常会在家或者工作中乱放东西或者找不到东西吗？",
+          "label": "10",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "11 你常常会因为周围的活动和噪音而分心吗？",
+          "label": "11",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "12 在需要维持坐姿的会议或者其他场景中，你会常常离开你的座位吗？",
+          "label": "12",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "13 你常常会感到烦躁不安吗？",
+          "label": "13",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "14 你在闲暇时会常常感到无法平静和放松吗？",
+          "label": "14",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "15 你会常常在社交场合下感到自己说话很多吗？",
+          "label": "15",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "16 你会常常在交谈中打断他人谈话吗？",
+          "label": "16",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "17 在需要排队办事的情况下，你会常常感到没有耐心等待吗？",
+          "label": "17",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "18 你会常常在他人忙碌时打搅他人吗？",
+          "label": "18",
+          "options": [
+            {
+              "text": "从不",
+              "value": 1
+            },
+            {
+              "text": "很少",
+              "value": 2
+            },
+            {
+              "text": "有时",
+              "value": 3
+            },
+            {
+              "text": "经常",
+              "value": 4
+            },
+            {
+              "text": "总是",
+              "value": 5
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "PARTA",
+          "calculation": "(sum[1]>2)+(sum[2]>2)+(sum[3]>2)+(sum[4]>2)+(sum[5]>3)+(sum[6]>3)"
+        },
+        {
+          "name": "PARTB",
+          "calculation": "(sum[7]>2)+(sum[8]>2)+(sum[9]>3)+(sum[10]>2)+(sum[11]>2)+(sum[12]>3)+(sum[13]>2)+(sum[14]>2)+(sum[15]>2)+(sum[16]>3)+(sum[17]>2)+(sum[18]>3)"
+        }
+      ]
+    },
+    {
+      "id": "注意控制量表(ACS)",
+      "title": "注意控制量表（Attentional Control Scale，ACS）",
+      "components": [
+        {
+          "type": "instruction",
+          "content": "您好，下列句子是描述注意力的，共 20 个问题，请您仔细阅读各个问题，然后从中选择一个最符合您的情况的答案。1=几乎从不 2=有时 3=经常 4=总是"
+        },
+        {
+          "type": "single_choice",
+          "content": "1.当周围有噪音的时候，我很难集中注意力到一个困难的任务上。",
+          "label": "ACS_1",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "2.当我需要专心的去解决问题时，我很难集中注意力。",
+          "label": "ACS_2",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "3.当我正在努力做某事时，周围的事情仍然能使我分心。",
+          "label": "ACS_3",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "4.即使我周围的房间里在放音乐，我仍然能很专心。",
+          "label": "ACS_4",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "5.当我全神贯注的时候，我能集中注意力，以至于我不能意识到周围发生了什么。",
+          "label": "ACS_5",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "6.当我正在阅读和研究的时候，如果有人在这个房间里谈话，我很容易分心。",
+          "label": "ACS_6",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "7.当我试图集中注意力在某些事情上时，我难以阻止分心的想法。",
+          "label": "ACS_7",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "8.当我兴奋的时候，我很难集中注意力。",
+          "label": "ACS_8",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "9.当我全神贯注的时候，我忽略了饥饿和口渴的感觉。",
+          "label": "ACS_9",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "10.我能快速的从一个任务转换到另一个任务。",
+          "label": "ACS_10",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "11.我要花一段时间才能真正的参与到一个新的任务中。",
+          "label": "ACS_11",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "12.当在课堂上写笔记的时候，我很难在写和听之间协调注意。",
+          "label": "ACS_12",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "13.若是我需要，我很快会对一个新的主题产生兴趣。",
+          "label": "ACS_13",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "14.在我打电话的时候，阅读或书写，对我来说是容易的。",
+          "label": "ACS_14",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "15.我很难同时进行两个对话。",
+          "label": "ACS_15",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "16.我很难快速地提出一个新的想法。",
+          "label": "ACS_16",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "17.在被打扰或分心后，我能很轻松的把我的注意力转向我之前想做的事情上。",
+          "label": "ACS_17",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "18.当一个让人分心的想法出现在我的脑海里时，我能很容易的把我的注意力从它上面移开。",
+          "label": "ACS_18",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "19.轮流做两个不同的任务，对我来说很容易。",
+          "label": "ACS_19",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "20.打破一种思维方式，从另外一个角度来看待它，对我来说很难。",
+          "label": "ACS_20",
+          "options": [
+            {
+              "text": "几乎从不",
+              "value": 1
+            },
+            {
+              "text": "有时",
+              "value": 2
+            },
+            {
+              "text": "经常",
+              "value": 3
+            },
+            {
+              "text": "总是",
+              "value": 4
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "ACS_Total",
+          "calculation": "(5-sum[ACS_1])+(5-sum[ACS_2])+(5-sum[ACS_3])+sum[ACS_4]+sum[ACS_5]+(5-sum[ACS_6])+(5-sum[ACS_7])+(5-sum[ACS_8])+sum[ACS_9]+sum[ACS_10]+(5-sum[ACS_11])+(5-sum[ACS_12])+sum[ACS_13]+sum[ACS_14]+(5-sum[ACS_15])+(5-sum[ACS_16])+sum[ACS_17]+sum[ACS_18]+sum[ACS_19]+(5-sum[ACS_20])"
+        }
+      ]
+    },
+    {
+      "id": "晕动症敏感性调查表(MSSQ)",
+      "title": "晕动症敏感性调查表(MSSQ)",
+      "components": [
+        {
+          "type": "instruction",
+          "content": "1.作为一个孩子(12 岁之前)，当您乘坐以下交通工具或娱乐活动时，你有多频繁感到不适或恶心？"
+        },
+        {
+          "type": "single_choice",
+          "content": "小汽车",
+          "label": "MSSQ_Child_1",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "公共汽车",
+          "label": "MSSQ_Child_2",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "火车",
+          "label": "MSSQ_Child_3",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "飞机",
+          "label": "MSSQ_Child_4",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "小船",
+          "label": "MSSQ_Child_5",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "轮船",
+          "label": "MSSQ_Child_6",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "秋千",
+          "label": "MSSQ_Child_7",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "旋转木马",
+          "label": "MSSQ_Child_8",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "过山车",
+          "label": "MSSQ_Child_9",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "instruction",
+          "content": "2.在过去的 10 年中(或 12 岁之后)，当您乘坐以下交通工具或娱乐活动时，您有多容易感到不适或恶心。"
+        },
+        {
+          "type": "single_choice",
+          "content": "小汽车",
+          "label": "MSSQ_Adult_1",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "公共汽车",
+          "label": "MSSQ_Adult_2",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "火车",
+          "label": "MSSQ_Adult_3",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "飞机",
+          "label": "MSSQ_Adult_4",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "小船",
+          "label": "MSSQ_Adult_5",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "轮船",
+          "label": "MSSQ_Adult_6",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "秋千",
+          "label": "MSSQ_Adult_7",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "旋转木马",
+          "label": "MSSQ_Adult_8",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "过山车",
+          "label": "MSSQ_Adult_9",
+          "options": [
+            {
+              "text": "从未经历过",
+              "value": 0
+            },
+            {
+              "text": "从不感觉恶心",
+              "value": 1
+            },
+            {
+              "text": "很少感觉恶心",
+              "value": 2
+            },
+            {
+              "text": "有时感觉恶心",
+              "value": 3
+            },
+            {
+              "text": "经常感觉恶心",
+              "value": 4
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "MSSQ_Child_Total",
+          "calculation": "sum[MSSQ_Child_1]+sum[MSSQ_Child_2]+sum[MSSQ_Child_3]+sum[MSSQ_Child_4]+sum[MSSQ_Child_5]+sum[MSSQ_Child_6]+sum[MSSQ_Child_7]+sum[MSSQ_Child_8]+sum[MSSQ_Child_9]"
+        },
+        {
+          "name": "MSSQ_Adult_Total",
+          "calculation": "sum[MSSQ_Adult_1]+sum[MSSQ_Adult_2]+sum[MSSQ_Adult_3]+sum[MSSQ_Adult_4]+sum[MSSQ_Adult_5]+sum[MSSQ_Adult_6]+sum[MSSQ_Adult_7]+sum[MSSQ_Adult_8]+sum[MSSQ_Adult_9]"
+        }
+      ]
+    },
+    {
+      "id": "晕动症评估调查表(SSQ)",
+      "title": "晕动症评估调查表(SSQ)",
+      "components": [
+        {
+          "type": "instruction",
+          "content": "请被试结合目前的情况回答下列问题："
+        },
+        {
+          "type": "single_choice",
+          "content": "1.您是否有不适的感觉？",
+          "label": "SSQ_1",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "2.您是否感到疲倦?",
+          "label": "SSQ_2",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "3.您是否感到头痛?",
+          "label": "SSQ_3",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "4.您是否感到眼睛疲劳?",
+          "label": "SSQ_4",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "5.您是否感到口水分泌增加?",
+          "label": "SSQ_5",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "6.您是否感到难以聚焦某处?",
+          "label": "SSQ_6",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "7.您是否正在出汗?",
+          "label": "SSQ_7",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "8.您是否感到恶心?",
+          "label": "SSQ_8",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "9.您目前是否感到难以集中注意力?",
+          "label": "SSQ_9",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "10.您是否感到头胀?",
+          "label": "SSQ_10",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "11.您是否感到视线模糊?",
+          "label": "SSQ_11",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "12.您是否感到头晕(睁眼时)?",
+          "label": "SSQ_12",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "13.您是否感到头晕(闭眼时)?",
+          "label": "SSQ_13",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "14.您是否感到眩晕(指失去方向感)?",
+          "label": "SSQ_14",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "15.您是否感到胃部感觉异样?",
+          "label": "SSQ_15",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "type": "single_choice",
+          "content": "16.您目前是否打嗝?",
+          "label": "SSQ_16",
+          "options": [
+            {
+              "text": "无",
+              "value": 0
+            },
+            {
+              "text": "轻微",
+              "value": 1
+            },
+            {
+              "text": "中度",
+              "value": 2
+            },
+            {
+              "text": "严重",
+              "value": 3
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "Nausea",
+          "calculation": "(sum[SSQ_1]+sum[SSQ_6]+sum[SSQ_7]+sum[SSQ_8]+sum[SSQ_9]+sum[SSQ_15]+sum[SSQ_16])*9.54"
+        },
+        {
+          "name": "Oculomotor",
+          "calculation": "(sum[SSQ_1]+sum[SSQ_2]+sum[SSQ_3]+sum[SSQ_4]+sum[SSQ_5]+sum[SSQ_9]+sum[SSQ_11])*7.58"
+        },
+        {
+          "name": "Disorientation",
+          "calculation": "(sum[SSQ_5]+sum[SSQ_8]+sum[SSQ_10]+sum[SSQ_11]+sum[SSQ_12]+sum[SSQ_13]+sum[SSQ_14])*13.92"
+        },
+        {
+          "name": "Total_Score",
+          "calculation": "(sum[SSQ_1]+sum[SSQ_6]+sum[SSQ_7]+sum[SSQ_8]+sum[SSQ_9]+sum[SSQ_15]+sum[SSQ_16]+sum[SSQ_1]+sum[SSQ_2]+sum[SSQ_3]+sum[SSQ_4]+sum[SSQ_5]+sum[SSQ_9]+sum[SSQ_11]+sum[SSQ_5]+sum[SSQ_8]+sum[SSQ_10]+sum[SSQ_11]+sum[SSQ_12]+sum[SSQ_13]+sum[SSQ_14])*3.74"
+        }
+      ]
+    }
+  ]
+}

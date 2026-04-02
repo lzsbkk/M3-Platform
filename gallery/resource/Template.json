@@ -1,0 +1,2185 @@
+{
+    "questionnaires": [
+        {
+            "id": "Karolinska Sleepiness Scale (KSS)",
+            "title": "Karolinska Sleepiness Scale (KSS)",
+            "components": [
+                {
+                    "type": "instruction",
+                    "content": "Please select the option that describes your current level of fatigue."
+                },
+                {
+                    "type": "single_choice",
+                    "content": "Please select the option that describes your current level of fatigue.",
+                    "label": "PL",
+                    "options": [
+                        {
+                            "text": "Extremely alert",
+                            "value": 1
+                        },
+                        {
+                            "text": "Very alert",
+                            "value": 2
+                        },
+                        {
+                            "text": "Alert",
+                            "value": 3
+                        },
+                        {
+                            "text": "Rather alert",
+                            "value": 4
+                        },
+                        {
+                            "text": "Neither alert nor sleepy",
+                            "value": 5
+                        },
+                        {
+                            "text": "A bit sleepy",
+                            "value": 6
+                        },
+                        {
+                            "text": "Sleepy, but it's not difficult to stay alert",
+                            "value": 7
+                        },
+                        {
+                            "text": "Sleepy, and it's a bit difficult to stay alert",
+                            "value": 8
+                        },
+                        {
+                            "text": "Very sleepy",
+                            "value": 9
+                        }
+                    ]
+                }
+            ],
+            "variables": [
+                {
+                    "name": "KSS",
+                    "calculation": "sum[PL]"
+                }
+            ]
+        },
+        {
+            "id": "Fatigue Self - Assessment Scale - 14",
+            "title": "Fatigue Self - Assessment Scale - 14 (Fatigue Scale - 14, FS - 14)",
+            "components": [
+                {
+                    "type": "instruction",
+                    "content": "Please ask the subject to choose 'Yes' or 'No' according to whether the question content matches the actual situation. Please answer the questions one by one."
+                },
+                {
+                    "type": "single_choice",
+                    "content": "1. Have you ever been troubled by fatigue?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "2. Do you need more rest?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "3. Do you feel drowsy or sleepy?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "4. Do you find it difficult to start doing things?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "5. You don't find it difficult to start doing things, but do you feel exhausted when you continue?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "6. Do you feel short of physical strength?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "7. Do you feel that your muscle strength has decreased compared with before?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "8. Do you feel weak?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "9. Do you have difficulty concentrating?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "10. Is your mind as clear and agile as usual when thinking about problems?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 0
+                        },
+                        {
+                            "text": "No",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "11. Do you have trouble speaking smoothly?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "12. Do you find it difficult to find a suitable word when speaking?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 1
+                        },
+                        {
+                            "text": "No",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "13. Is your memory as good as usual now?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 0
+                        },
+                        {
+                            "text": "No",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "14. Do you still like doing the things you used to do?",
+                    "label": "Fatigue",
+                    "options": [
+                        {
+                            "text": "Yes",
+                            "value": 0
+                        },
+                        {
+                            "text": "No",
+                            "value": 1
+                        }
+                    ]
+                }
+            ],
+            "variables": [
+                {
+                    "name": "FS - 14",
+                    "calculation": "sum[Fatigue]"
+                }
+            ]
+        },
+        {
+            "id": "Adult ADHD Self - Report Scale (ASRS)",
+            "title": "Adult ADHD Self - Report Scale (ASRS)",
+            "components": [
+                {
+                    "type": "instruction",
+                    "content": "Please answer the following questions and choose the option that best describes your feelings and behaviors in the past six months:"
+                },
+                {
+                    "type": "instruction",
+                    "content": "Part A"
+                },
+                {
+                    "type": "single_choice",
+                    "content": "1. After completing the challenging part of a task, do you often have difficulty with the final details?",
+                    "label": "1",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "2. When performing a task that requires organization, do you often have difficulty keeping things in order?",
+                    "label": "2",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "3. Do you often forget appointments or things that you have to do?",
+                    "label": "3",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "4. When you need to complete a mentally demanding task, do you often avoid or postpone it?",
+                    "label": "4",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "5. When you have to sit for a long time, do you often feel restless with your hands and feet?",
+                    "label": "5",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "6. Do you often feel extremely active and have to complete certain things, as if driven by a motor?",
+                    "label": "6",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "instruction",
+                    "content": "Part B"
+                },
+                {
+                    "type": "single_choice",
+                    "content": "7. Do you often make careless mistakes when doing boring or difficult work?",
+                    "label": "7",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "8. Do you often have difficulty staying focused when doing boring or repetitive work?",
+                    "label": "8",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "9. Do you often have difficulty focusing on what others are saying even when they are talking to you face - to - face?",
+                    "label": "9",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "10. Do you often misplace or lose things at home or at work?",
+                    "label": "10",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "11. Do you often get distracted by the activities and noises around you?",
+                    "label": "11",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "12. Do you often leave your seat in meetings or other situations where you need to maintain a sitting position?",
+                    "label": "12",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "13. Do you often feel irritable?",
+                    "label": "13",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "14. Do you often feel unable to calm down and relax in your leisure time?",
+                    "label": "14",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "15. Do you often feel that you talk a lot in social situations?",
+                    "label": "15",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "16. Do you often interrupt others during a conversation?",
+                    "label": "16",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "17. Do you often feel impatient when waiting in line to do something?",
+                    "label": "17",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "18. Do you often disturb others when they are busy?",
+                    "label": "18",
+                    "options": [
+                        {
+                            "text": "Never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Rarely",
+                            "value": 2
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 3
+                        },
+                        {
+                            "text": "Often",
+                            "value": 4
+                        },
+                        {
+                            "text": "Always",
+                            "value": 5
+                        }
+                    ]
+                }
+            ],
+            "variables": [
+                {
+                    "name": "PARTA",
+                    "calculation": "(sum[1]>2)+(sum[2]>2)+(sum[3]>2)+(sum[4]>2)+(sum[5]>3)+(sum[6]>3)"
+                },
+                {
+                    "name": "PARTB",
+                    "calculation": "(sum[7]>2)+(sum[8]>2)+(sum[9]>3)+(sum[10]>2)+(sum[11]>2)+(sum[12]>3)+(sum[13]>2)+(sum[14]>2)+(sum[15]>2)+(sum[16]>3)+(sum[17]>2)+(sum[18]>3)"
+                }
+            ]
+        },
+        {
+            "id": "Attentional Control Scale (ACS)",
+            "title": "Attentional Control Scale (Attentional Control Scale, ACS)",
+            "components": [
+                {
+                    "type": "instruction",
+                    "content": "Hello, the following sentences describe attention. There are 20 questions in total. Please read each question carefully and then choose an answer that best suits your situation. 1 = Almost never, 2 = Sometimes, 3 = Often, 4 = Always"
+                },
+                {
+                    "type": "single_choice",
+                    "content": "1. When there is noise around, I find it difficult to concentrate on a difficult task.",
+                    "label": "ACS_1",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "2. When I need to concentrate on solving a problem, I find it difficult to focus.",
+                    "label": "ACS_2",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "3. When I'm trying to do something, things around me can still distract me.",
+                    "label": "ACS_3",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "4. Even if there is music playing in the room around me, I can still concentrate very well.",
+                    "label": "ACS_4",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "5. When I'm fully concentrated, I can focus so much that I'm not aware of what's going on around me.",
+                    "label": "ACS_5",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "6. When I'm reading and studying, if someone is talking in the room, I'm easily distracted.",
+                    "label": "ACS_6",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "7. When I'm trying to concentrate on something, I have difficulty preventing distracting thoughts.",
+                    "label": "ACS_7",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "8. When I'm excited, I find it difficult to concentrate.",
+                    "label": "ACS_8",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "9. When I'm fully concentrated, I ignore the feeling of hunger and thirst.",
+                    "label": "ACS_9",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "10. I can quickly switch from one task to another.",
+                    "label": "ACS_10",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "11. It takes me some time to really get involved in a new task.",
+                    "label": "ACS_11",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "12. When taking notes in class, I find it difficult to coordinate my attention between writing and listening.",
+                    "label": "ACS_12",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "13. If I need to, I'll quickly become interested in a new topic.",
+                    "label": "ACS_13",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "14. It's easy for me to read or write while on the phone.",
+                    "label": "ACS_14",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "15. I find it difficult to have two conversations at the same time.",
+                    "label": "ACS_15",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "16. I find it difficult to quickly come up with a new idea.",
+                    "label": "ACS_16",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "17. After being interrupted or distracted, I can easily turn my attention back to what I was doing before.",
+                    "label": "ACS_17",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "18. When a distracting thought comes into my mind, I can easily shift my attention away from it.",
+                    "label": "ACS_18",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "19. It's easy for me to alternate between two different tasks.",
+                    "label": "ACS_19",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "single_choice",
+                    "content": "20. It's difficult for me to break a way of thinking and look at it from another angle.",
+                    "label": "ACS_20",
+                    "options": [
+                        {
+                            "text": "Almost never",
+                            "value": 1
+                        },
+                        {
+                            "text": "Sometimes",
+                            "value": 2
+                        },
+                        {
+                            "text": "Often",
+                            "value": 3
+                        },
+                        {
+                            "text": "Always",
+                            "value": 4
+                        }
+                    ]
+                }
+            ],
+            "variables": [
+                {
+                    "name": "ACS_Total",
+                    "calculation": "(5 - sum[ACS_1])+(5 - sum[ACS_2])+(5 - sum[ACS_3])+sum[ACS_4]+sum[ACS_5]+(5 - sum[ACS_6])+(5 - sum[ACS_7])+(5 - sum[ACS_8])+sum[ACS_9]+sum[ACS_10]+(5 - sum[ACS_11])+(5 - sum[ACS_12])+sum[ACS_13]+sum[ACS_14]+(5 - sum[ACS_15])+(5 - sum[ACS_16])+sum[ACS_17]+sum[ACS_18]+sum[ACS_19]+(5 - sum[ACS_20])"
+                }
+            ]
+        },
+        {
+        "id": "Motion Sickness Susceptibility Questionnaire (MSSQ)",
+        "title": "Motion Sickness Susceptibility Questionnaire (MSSQ)",
+        "components": [
+            {
+                "type": "instruction",
+                "content": "1. As a child (before the age of 12), how often did you feel uncomfortable or nauseous when taking the following means of transportation or participating in the following entertainment activities?"
+            },
+            {
+                "type": "single_choice",
+                "content": "Car",
+                "label": "MSSQ_Child_1",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Bus",
+                "label": "MSSQ_Child_2",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Train",
+                "label": "MSSQ_Child_3",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Airplane",
+                "label": "MSSQ_Child_4",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Small boat",
+                "label": "MSSQ_Child_5",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Ship",
+                "label": "MSSQ_Child_6",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Swing",
+                "label": "MSSQ_Child_7",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Merry-go-round",
+                "label": "MSSQ_Child_8",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Roller coaster",
+                "label": "MSSQ_Child_9",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "instruction",
+                "content": "2. In the past 10 years (or after the age of 12), how often did you feel uncomfortable or nauseous when taking the following means of transportation or participating in the following entertainment activities?"
+            },
+            {
+                "type": "single_choice",
+                "content": "Car",
+                "label": "MSSQ_Adult_1",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Bus",
+                "label": "MSSQ_Adult_2",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Train",
+                "label": "MSSQ_Adult_3",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Airplane",
+                "label": "MSSQ_Adult_4",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Small boat",
+                "label": "MSSQ_Adult_5",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Ship",
+                "label": "MSSQ_Adult_6",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Swing",
+                "label": "MSSQ_Adult_7",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Merry-go-round",
+                "label": "MSSQ_Adult_8",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "Roller coaster",
+                "label": "MSSQ_Adult_9",
+                "options": [
+                    {
+                        "text": "Never experienced",
+                        "value": 0
+                    },
+                    {
+                        "text": "Never feel nauseous",
+                        "value": 1
+                    },
+                    {
+                        "text": "Rarely feel nauseous",
+                        "value": 2
+                    },
+                    {
+                        "text": "Sometimes feel nauseous",
+                        "value": 3
+                    },
+                    {
+                        "text": "Often feel nauseous",
+                        "value": 4
+                    }
+                ]
+            }
+        ],
+        "variables": [
+            {
+                "name": "MSSQ_Child_Total",
+                "calculation": "sum[MSSQ_Child_1]+sum[MSSQ_Child_2]+sum[MSSQ_Child_3]+sum[MSSQ_Child_4]+sum[MSSQ_Child_5]+sum[MSSQ_Child_6]+sum[MSSQ_Child_7]+sum[MSSQ_Child_8]+sum[MSSQ_Child_9]"
+            },
+            {
+                "name": "MSSQ_Adult_Total",
+                "calculation": "sum[MSSQ_Adult_1]+sum[MSSQ_Adult_2]+sum[MSSQ_Adult_3]+sum[MSSQ_Adult_4]+sum[MSSQ_Adult_5]+sum[MSSQ_Adult_6]+sum[MSSQ_Adult_7]+sum[MSSQ_Adult_8]+sum[MSSQ_Adult_9]"
+            }
+        ]
+    },
+    {
+        "id": "Simulator Sickness Questionnaire (SSQ)",
+        "title": "Simulator Sickness Questionnaire (SSQ)",
+        "components": [
+            {
+                "type": "instruction",
+                "content": "Please answer the following questions based on your current situation:"
+            },
+            {
+                "type": "single_choice",
+                "content": "1. Do you feel uncomfortable?",
+                "label": "SSQ_1",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "2. Do you feel fatigued?",
+                "label": "SSQ_2",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "3. Do you have a headache?",
+                "label": "SSQ_3",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "4. Do you feel eye fatigue?",
+                "label": "SSQ_4",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "5. Do you have increased salivation?",
+                "label": "SSQ_5",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "6. Do you have difficulty focusing?",
+                "label": "SSQ_6",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "7. Are you sweating?",
+                "label": "SSQ_7",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "8. Do you feel nauseous?",
+                "label": "SSQ_8",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "9. Do you have difficulty concentrating?",
+                "label": "SSQ_9",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "10. Do you feel a sense of fullness in your head?",
+                "label": "SSQ_10",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "11. Do you have blurred vision?",
+                "label": "SSQ_11",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "12. Do you feel dizzy (with eyes open)?",
+                "label": "SSQ_12",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "13. Do you feel dizzy (with eyes closed)?",
+                "label": "SSQ_13",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "14. Do you feel vertigo (a sense of disorientation)?",
+                "label": "SSQ_14",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "15. Do you feel an unusual sensation in your stomach?",
+                "label": "SSQ_15",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "type": "single_choice",
+                "content": "16. Are you belching?",
+                "label": "SSQ_16",
+                "options": [
+                    {
+                        "text": "None",
+                        "value": 0
+                    },
+                    {
+                        "text": "Mild",
+                        "value": 1
+                    },
+                    {
+                        "text": "Moderate",
+                        "value": 2
+                    },
+                    {
+                        "text": "Severe",
+                        "value": 3
+                    }
+                ]
+            }
+        ],
+        "variables": [
+            {
+                "name": "Nausea",
+                "calculation": "(sum[SSQ_1]+sum[SSQ_6]+sum[SSQ_7]+sum[SSQ_8]+sum[SSQ_9]+sum[SSQ_15]+sum[SSQ_16])*9.54"
+            },
+            {
+                "name": "Oculomotor",
+                "calculation": "(sum[SSQ_1]+sum[SSQ_2]+sum[SSQ_3]+sum[SSQ_4]+sum[SSQ_5]+sum[SSQ_9]+sum[SSQ_11])*7.58"
+            },
+            {
+                "name": "Disorientation",
+                "calculation": "(sum[SSQ_5]+sum[SSQ_8]+sum[SSQ_10]+sum[SSQ_11]+sum[SSQ_12]+sum[SSQ_13]+sum[SSQ_14])*13.92"
+            },
+            {
+                "name": "Total_Score",
+                "calculation": "(sum[SSQ_1]+sum[SSQ_6]+sum[SSQ_7]+sum[SSQ_8]+sum[SSQ_9]+sum[SSQ_15]+sum[SSQ_16]+sum[SSQ_1]+sum[SSQ_2]+sum[SSQ_3]+sum[SSQ_4]+sum[SSQ_5]+sum[SSQ_9]+sum[SSQ_11]+sum[SSQ_5]+sum[SSQ_8]+sum[SSQ_10]+sum[SSQ_11]+sum[SSQ_12]+sum[SSQ_13]+sum[SSQ_14])*3.74"
+            }
+        ]
+    }
+    ]
+}
