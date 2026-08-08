@@ -1,6 +1,7 @@
 # coding:utf-8
 import os
 import sys
+from pathlib import Path
 from PyQt5.QtCore import Qt, QTranslator, QTimer
 from PyQt5.QtGui import QFont, QSurfaceFormat
 from PyQt5.QtWidgets import QApplication
@@ -9,6 +10,20 @@ from PyQt5.QtGui import QGuiApplication
 
 from app.common.config import cfg
 from app.view.main_window import MainWindow
+
+
+if "--performance" in sys.argv:
+    sys.argv.remove("--performance")
+    package_root = Path(__file__).resolve().parents[2]
+    os.environ.setdefault(
+        "M3_GUI_PERFORMANCE_DIR",
+        str(package_root / "gui_performance_results"),
+    )
+    os.environ.setdefault("M3_GUI_PERFORMANCE_SESSION", "formal_gui_20260806")
+    os.environ.setdefault("M3_GUI_PERFORMANCE_SAMPLE_MS", "2")
+    os.environ.setdefault("M3_GUI_PERFORMANCE_BASELINE_SECONDS", "0.5")
+    os.environ.setdefault("M3_GUI_PERFORMANCE_WARMUPS", "1")
+    os.environ.setdefault("M3_GUI_PERFORMANCE_RUNS", "20")
 
 QApplication.setAttribute(Qt.AA_UseDesktopOpenGL)
 QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps)

@@ -1,0 +1,23 @@
+{
+  "questionnaires": [
+    {
+      "id": "Workflow demo scale",
+      "title": "Workflow demo scale",
+      "components": [
+        {
+          "type": "single_choice",
+          "content": "Select the demonstration response.",
+          "label": "DEMO",
+          "options": [
+            {"text": "Option 1", "value": 1, "selected": true},
+            {"text": "Option 2", "value": 2}
+          ]
+        }
+      ],
+      "variables": [
+        {"name": "Demo score", "calculation": "sum[DEMO]"}
+      ]
+    }
+  ]
+}
+

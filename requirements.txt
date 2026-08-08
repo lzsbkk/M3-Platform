@@ -138,5 +138,6 @@ xmltodict==0.13.0
 yarg==0.1.10
 zipp==3.19.2
 zstandard==0.23.0
-PyQt-SiliconUI @ git+https://github.com/ChinaIceF/PyQt-SiliconUI.git
-memory_profiler>=0.61.0
+PyQt-SiliconUI @ git+https://github.com/ChinaIceF/PyQt-SiliconUI.git@7005080698e3e813dd923898317788edc8f6b8da
+memory_profiler==0.61.0
+qt-material==2.14

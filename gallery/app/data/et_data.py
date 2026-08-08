@@ -1052,7 +1052,7 @@ class ETData:
                 ('Fixation Preprocessing', [
                     ('Fixation Merge', preprocessing_params.get('merge_fixations', False)),
                     ('Max Merge Time (ms)', preprocessing_params.get('max_time_between_fixations', 'NA')),
-                    ('Max Merge Angle (度)', preprocessing_params.get('max_angle_between_fixations', 'NA')),
+                    ('Max Merge Angle (deg)', preprocessing_params.get('max_angle_between_fixations', 'NA')),
                     ('Min Fixation Duration', preprocessing_params.get('discard_short_fixations', False)),
                     ('Min Fixation Time (ms)', preprocessing_params.get('min_fixation_duration', 'NA'))
                 ])
@@ -1076,7 +1076,7 @@ class ETData:
 
         print(f"All Data Exported To Folder: {output_folder}")
 
-    def interpolate_gaps(self, max_gap_length, min_gap_size=3):
+    def interpolate_gaps(self, max_gap_length, min_gap_size=1):
         print(f"Starting gap interpolation. Max gap length: {max_gap_length} ms, Min gap size: {min_gap_size} samples")
         
         timestamps = self.processed_data['Timestamp'].values
@@ -1241,7 +1241,12 @@ class ETData:
     def create_event(self, start_idx, end_idx, event_type):
         
         start_time = self.processed_data['Timestamp'].iloc[start_idx]
-        end_time = self.processed_data['Timestamp'].iloc[end_idx]
+        # Events cover half-open intervals, including the final sample period.
+        timestamps = self.processed_data['Timestamp']
+        if end_idx + 1 < len(timestamps):
+            end_time = timestamps.iloc[end_idx + 1]
+        else:
+            end_time = timestamps.iloc[end_idx] + 1.0 / self.sample_rate
         duration = end_time - start_time
         # Use angle coordinates (GazeAngleX/Y) so merge threshold (0.5 deg) works in correct space
         if 'GazeAngleX' in self.processed_data.columns:
@@ -1289,7 +1294,7 @@ class ETData:
         saccade_velocities = []  
         event_start = None
         current_event = None
-        min_duration = 0.02  
+        # Preserve short fragments for merging; apply the duration limit afterward.
         max_gap_duration = 0.075  
 
         timestamps = self.processed_data['Timestamp'].values
@@ -1331,15 +1336,14 @@ class ETData:
 
                 # Long gap or non-fixation event: terminate current event
                 if event_start is not None:
-                    duration = timestamps[i-1] - timestamps[event_start]
-                    if duration >= min_duration and is_valid_data(event_start, i):
+                    if is_valid_data(event_start, i):
                         event = self.create_event(event_start, i-1, current_event)
                         if event:
                             if current_event == 'fixation':
                                 fixations.append(event)
                             else:
                                 saccades.append(event)
-                                event_velocities = velocities[event_start:i-1]
+                                event_velocities = velocities[event_start:i]
                                 event_velocities = event_velocities[~np.isnan(event_velocities)]
                                 if len(event_velocities) > 0:
                                     saccade_velocities.append({
@@ -1357,15 +1361,14 @@ class ETData:
                 event_start = i
                 current_event = event_type
             elif event_type != current_event:
-                duration = timestamps[i-1] - timestamps[event_start]
-                if duration >= min_duration and is_valid_data(event_start, i):
+                if is_valid_data(event_start, i):
                     event = self.create_event(event_start, i-1, current_event)
                     if event:
                         if current_event == 'fixation':
                             fixations.append(event)
                         else:
                             saccades.append(event)
-                            event_velocities = velocities[event_start:i-1]
+                            event_velocities = velocities[event_start:i]
                             event_velocities = event_velocities[~np.isnan(event_velocities)]
                             if len(event_velocities) > 0:
                                 saccade_velocities.append({
@@ -1377,8 +1380,7 @@ class ETData:
                 current_event = event_type
 
         if event_start is not None:
-            duration = timestamps[-1] - timestamps[event_start]
-            if duration >= min_duration and is_valid_data(event_start, len(velocities)):
+            if is_valid_data(event_start, len(velocities)):
                 event = self.create_event(event_start, len(velocities)-1, current_event)
                 if event:
                     if current_event == 'fixation':
@@ -1486,7 +1488,7 @@ class ETData:
         if not fixations:
             return fixations
 
-        merged_fixations = [fixations[0]]
+        merged_fixations = [fixations[0].copy()]
         
         for current in fixations[1:]:
             previous = merged_fixations[-1]
@@ -1494,13 +1496,17 @@ class ETData:
             angle_between = np.sqrt((current['x'] - previous['x'])**2 + (current['y'] - previous['y'])**2)
             
             if time_between <= max_time_between_fixations/1000 and angle_between <= max_angle_between_fixations:
-                # Merge fixations
+                # Use the original durations before updating the merged interval.
+                previous_duration = previous['duration']
+                current_duration = current['duration']
+                total_duration = previous_duration + current_duration
+                if total_duration > 0:
+                    previous['x'] = (previous['x'] * previous_duration + current['x'] * current_duration) / total_duration
+                    previous['y'] = (previous['y'] * previous_duration + current['y'] * current_duration) / total_duration
                 merged_fixations[-1]['end'] = current['end']
-                merged_fixations[-1]['duration'] += current['duration'] + time_between
-                merged_fixations[-1]['x'] = (previous['x'] * previous['duration'] + current['x'] * current['duration']) / (previous['duration'] + current['duration'])
-                merged_fixations[-1]['y'] = (previous['y'] * previous['duration'] + current['y'] * current['duration']) / (previous['duration'] + current['duration'])
+                merged_fixations[-1]['duration'] = previous['end'] - previous['start']
             else:
-                merged_fixations.append(current)
+                merged_fixations.append(current.copy())
         
         # print(f"Fixations after merging: {len(merged_fixations)}")
         # print("Merged fixation durations:")
@@ -1510,7 +1516,8 @@ class ETData:
         return merged_fixations
 
     def discard_short_fixations(self, fixations, min_fixation_duration):
-        long_fixations = [f for f in fixations if f['duration'] >= min_fixation_duration / 1000]
+        # Allow floating-point roundoff at the exact duration threshold.
+        long_fixations = [f for f in fixations if f['duration'] >= min_fixation_duration / 1000 - 1e-10]
         
         # print(f"Fixations after discarding short ones: {len(long_fixations)}")
         # if long_fixations:
@@ -2206,7 +2213,7 @@ class ETData:
         for _, fixation in aoi_fixations.iterrows():
             fixation_data = self.processed_data[
                 (self.processed_data['Timestamp'] >= fixation['start']) &
-                (self.processed_data['Timestamp'] <= fixation['end'])
+                (self.processed_data['Timestamp'] < fixation['end'])
             ]
             avg_pupil_size = fixation_data['Pupil'].mean()
             pupil_sizes.append(avg_pupil_size)
@@ -2359,7 +2366,7 @@ class ETData:
             pupil_data = []
             for idx, row in data.iterrows():
                 mask = ((self.processed_data['Timestamp'] >= row['start']) & 
-                    (self.processed_data['Timestamp'] <= row['end']))
+                    (self.processed_data['Timestamp'] < row['end']))
                 mean_pupil = self.processed_data.loc[mask, 'Pupil'].mean()
                 pupil_data.append(mean_pupil)
             data['mean_pupil'] = pupil_data

@@ -1,0 +1,9 @@
+name: m3-platform-py39
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.12
+  - pip=24.1
+  - pip:
+      - -r requirements.txt
+

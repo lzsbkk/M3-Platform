@@ -1,0 +1,32 @@
+{
+  "eeg": {
+    "input": "sample_data/eeg/S001R03.edf",
+    "preprocessing": {
+      "bandpass": [1.0, 40.0],
+      "notch": 50.0,
+      "reference": "Average"
+    },
+    "event_name": "T1",
+    "event_window": [-1.0, 2.0],
+    "baseline": null,
+    "features": ["Mean Amplitude", "Amplitude Variance", "Total Energy"]
+  },
+  "fnirs": {
+    "input": "sample_data/fnirs/neuro_run01.snirf",
+    "age": 24,
+    "preprocessing": {
+      "filter_bands": [0.01, 0.2],
+      "detrend": true,
+      "detrend_order": 1,
+      "tddr": true
+    },
+    "event_name": "1",
+    "event_window": [-2.0, 10.0],
+    "baseline": null,
+    "features": ["Mean", "Peak", "Minimum", "AUC", "Peak Latency"]
+  },
+  "questionnaire": {
+    "input": "sample_data/questionnaire/demo_questionnaire.json",
+    "questionnaire_id": "Workflow demo scale"
+  }
+}

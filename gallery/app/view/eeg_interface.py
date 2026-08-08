@@ -849,7 +849,7 @@ class PreprocessingCard(CardWidget):
                 new_text = f"({start:.2f},{end:.2f})"
             self.bad_segments_input.setText(new_text)
 
-    # @PerformanceMonitor()
+    @PerformanceMonitor("EEG preprocessing")
     def on_confirm(self):
         if self.eeg_data is None:
             # InfoBar.error(
@@ -1829,7 +1829,7 @@ class EEGFeatureExtractionCard(CardWidget):
         #         parent=self
         #     )
 
-    # @PerformanceMonitor()
+    @PerformanceMonitor("EEG feature extraction")
     def extract_features(self):
         selected_channels = self.get_selected_items(self.channel_tree)
         selected_features = self.get_selected_items(self.feature_tree)

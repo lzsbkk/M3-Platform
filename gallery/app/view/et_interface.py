@@ -589,7 +589,7 @@ class PreprocessingCard(CardWidget):
         checkbox.setText(label)
         return checkbox
     
-    # @PerformanceMonitor()
+    @PerformanceMonitor("ET preprocessing")
     def on_confirm(self):
         if self.et_data is None:
             # InfoBar.error(
@@ -1545,7 +1545,7 @@ class FeatureExtractionCard(CardWidget):
                         selected_features.append(feature_item.text(0))
         return selected_features
     
-    # @PerformanceMonitor()
+    @PerformanceMonitor("ET feature extraction")
     def extract_features(self):
         selected_features = self.get_selected_features()
 
