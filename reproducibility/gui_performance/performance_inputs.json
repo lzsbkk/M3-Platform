@@ -1,0 +1,32 @@
+{
+  "EEG": {
+    "file": "reproducibility/gui_workflow/sample_data/eeg/S001R03.edf",
+    "samples": 20000,
+    "sampling_rate_hz": 160,
+    "duration_seconds": 125,
+    "events": ["T0", "T1", "T2"],
+    "preprocessing": "1-40 Hz band-pass; 50 Hz line-noise filter; average reference; automatic saving enabled",
+    "feature_extraction": "T1; -1 to 2 s; no baseline; all channels and available features"
+  },
+  "fNIRS": {
+    "file": "reproducibility/gui_workflow/sample_data/fnirs/neuro_run01.snirf",
+    "intensity_channels": 18,
+    "samples": 8000,
+    "sampling_rate_hz": 20.03,
+    "duration_seconds": 399,
+    "events": ["1", "2"],
+    "preprocessing": "first-order detrending; TDDR; 0.01-0.2 Hz band-pass; participant age 24; automatic saving enabled",
+    "feature_extraction": "event 1; -2 to 10 s; no baseline; all channels; mean, peak, minimum, AUC, and peak latency"
+  },
+  "ET": {
+    "distributed": false,
+    "file_description": "Private ET recording with an accompanying scene video; files are not distributed",
+    "samples": 34677,
+    "sampling_rate_hz": 1000,
+    "duration_seconds": 34.68,
+    "fields": "right-eye 2D gaze coordinates and pupil area",
+    "video": "1920x1080; 1280 frames; approximately 24.95 fps; approximately 51.46 s",
+    "preprocessing": "75 ms pupil/gaze interpolation; moving-average filters (5 pupil, 3 gaze); 30 deg/s fixation threshold; 100-300 ms blink threshold; 20 ms velocity window; fixation merge 75 ms/0.5 deg; minimum fixation 60 ms; automatic saving enabled",
+    "feature_extraction": "all available fixation, saccade, pupil, and blink features"
+  }
+}

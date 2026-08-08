@@ -1,0 +1,70 @@
+{
+  "scope": "Study-specific matched settings for the Table 3 preprocessing-output comparison; these are not global GUI defaults.",
+  "input_availability": "Private validation recordings are not distributed.",
+  "eeg": {
+    "recording": {
+      "n_recordings": 1,
+      "channels": 32,
+      "sampling_rate_hz": 511.89,
+      "duration_seconds": 232.33
+    },
+    "processing": {
+      "bandpass_hz": [1.0, 40.0],
+      "line_noise_hz": 50.0,
+      "reference": "average"
+    },
+    "comparison": {
+      "channel_matching": "case-insensitive channel-name matching",
+      "sample_alignment": "paired sample order after export",
+      "metrics": ["Pearson r", "RMSE", "NRMSE", "maximum absolute error"]
+    }
+  },
+  "fnirs": {
+    "recording": {
+      "n_recordings": 1,
+      "intensity_channels": 28,
+      "source_detector_pairs": 14,
+      "wavelengths_per_pair": 2,
+      "sampling_rate_hz": 50.0,
+      "duration_seconds": 360.98
+    },
+    "processing": {
+      "source_detector_distance_cm": [2.0, 4.0],
+      "detrend_order": 1,
+      "motion_correction": "TDDR",
+      "bandpass_hz": [0.01, 0.2]
+    },
+    "comparison": {
+      "stages": ["pre-bandpass", "post-bandpass"],
+      "channel_matching": "case- and whitespace-normalized channel-name matching",
+      "sample_alignment": "paired sample order after export",
+      "metrics": ["Pearson r", "RMSE", "NRMSE", "maximum absolute error"]
+    }
+  },
+  "eye_tracking": {
+    "recording": {
+      "n_recordings": 1,
+      "streams": ["binocular gaze", "pupil"],
+      "approximate_sampling_rate_hz": 100.0,
+      "duration_seconds": 204.54
+    },
+    "processing": {
+      "pupil_interpolation_max_gap_ms": 75,
+      "pupil_filter": "moving average, 5 samples",
+      "fixation_velocity_threshold_deg_per_s": 30.0,
+      "blink_interval_ms": [100, 300],
+      "gaze_interpolation_max_gap_ms": 75,
+      "gaze_filter": "moving average, 3 samples",
+      "velocity_window_ms": 20,
+      "fixation_merge_max_gap_ms": 75,
+      "fixation_merge_max_angle_deg": 0.5,
+      "minimum_fixation_duration_ms": 60
+    },
+    "comparison": {
+      "timestamp_matching": "nearest timestamp",
+      "timestamp_tolerance_ms": 15,
+      "continuous_metrics": ["Pearson r", "RMSE", "MAE", "maximum absolute error"],
+      "fixation_metrics": ["point-wise agreement", "Cohen's kappa", "F1-score"]
+    }
+  }
+}

@@ -653,7 +653,7 @@ class PreprocessingCard(CardWidget):
         except ValueError as e:
             raise ValueError(f"{field_name} is invalid: {str(e)}")
     
-    # @PerformanceMonitor()  
+    @PerformanceMonitor("fNIRS preprocessing")
     def on_confirm(self):
         if self.fnirs_data is None:
             self.show_error("Data Not loaded")
@@ -1776,7 +1776,7 @@ class FeatureExtractionCard(CardWidget):
         #         duration=2000,
         #         parent=self
         #     )
-    # @PerformanceMonitor()
+    @PerformanceMonitor("fNIRS feature extraction")
     def extract_features(self):
         selected_channels = self.get_selected_items(self.channel_tree)
         selected_features = self.get_selected_items(self.feature_tree)
